@@ -20,11 +20,11 @@ public class Transaction {
 
     private String title;
 
-    private Double amount;
+    private double amount;
 
-    private String type;
+    private String category;
 
-    private LocalDateTime createdAt = LocalDateTime.now();
+    private LocalDateTime date;
 
     @ManyToOne
     @JoinColumn(name = "user_id")
